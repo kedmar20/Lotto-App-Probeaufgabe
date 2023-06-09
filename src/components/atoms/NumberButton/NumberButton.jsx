@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function NumberButton() {
+export default function NumberButton({number}) {
   return (
     <div>
-      11
+      {number}
     </div>
   )
 }
