@@ -17,8 +17,7 @@ import {
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={ <App />}>
     <Route index element={<Numbers />} />
-    {/* <Route path="chosen" element={<ChosenNumbers />}> */}
-    {/* </Route> */}
+    <Route path="chosen" element={<ChosenNumbers />}/>
   </Route>
 ));
 
