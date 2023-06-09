@@ -4,9 +4,7 @@ import NumberList from 'src/components/molecules/NumberList/NumberList'
 
 const Numbers = () => {
   return (
-    <div>
       <NumberList/>       
-    </div>
   )
 }
 

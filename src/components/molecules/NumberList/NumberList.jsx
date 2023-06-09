@@ -1,5 +1,6 @@
 import React from 'react'
 import NumberButton from 'src/components/atoms/NumberButton/NumberButton';
+import { NumberListStyles } from './NumberList.styles';
 
 const NumberList = () => {
     const numbers = [];
@@ -8,11 +9,11 @@ const NumberList = () => {
 };
 console.log(numbers);
   return (
-    <div>
+    <NumberListStyles>
       {  numbers.map((number)=>(
-      <NumberButton number={number}/>
+      <NumberButton key={number} number={number}/>
         ))}
-    </div>
+    </NumberListStyles>
   )
 }
 

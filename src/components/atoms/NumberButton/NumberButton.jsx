@@ -1,9 +1,10 @@
 import React from 'react'
+import { NumberButtonStyles } from './NumberButton.styles'
 
 export default function NumberButton({number}) {
   return (
-    <div>
+    <NumberButtonStyles>
       {number}
-    </div>
+    </NumberButtonStyles>
   )
 }
