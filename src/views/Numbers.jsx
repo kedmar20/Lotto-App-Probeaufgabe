@@ -1,11 +1,11 @@
 import React from 'react'
+import NumberList from 'src/components/molecules/NumberList/NumberList'
 
 
 const Numbers = () => {
   return (
     <div>
-      Numbers
-       
+      <NumberList/>       
     </div>
   )
 }
