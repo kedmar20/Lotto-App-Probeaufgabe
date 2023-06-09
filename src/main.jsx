@@ -10,8 +10,6 @@ import {
   createRoutesFromElements,
   Route
 } from "react-router-dom";
-// import Provider from "src/providers/Providers";
-// import MainTemplate from "src/components/templates/MainTemplate/MainTemplate";
 
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -22,11 +20,7 @@ const router = createBrowserRouter(createRoutesFromElements(
 ));
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-      {/* <MainTemplate>  */}
-   {/* <Provider> */}
-    <RouterProvider router={router}/>
-{/* </Provider> */}
- {/* </MainTemplate> */}
+  <React.StrictMode>  
+    <RouterProvider router={router}/> 
   </React.StrictMode>,
 )
