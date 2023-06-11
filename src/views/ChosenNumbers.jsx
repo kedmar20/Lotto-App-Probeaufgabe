@@ -4,6 +4,7 @@ const ChosenNumbers = () => {
   return (
     <div>
       ChoosenNumbers
+      
     </div>
   )
 }

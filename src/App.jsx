@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "src/assets/styles/theme";
 import {Outlet} from 'react-router-dom';
 import MainTemplate from "src/components/templates/MainTemplate/MainTemplate";
-// import Provider from "src/providers/Providers";
+import NumbersProvider from "./providers/Providers";
 
 
 function App() {
@@ -12,9 +12,9 @@ function App() {
    return (
          <ThemeProvider theme={theme}>      
             <MainTemplate> 
-                  {/* <Provider> */}
+                  <NumbersProvider>
                         <Outlet />           
-                  {/* </Provider> */}
+                  </NumbersProvider>
             </MainTemplate>                   
          </ThemeProvider>     
          
