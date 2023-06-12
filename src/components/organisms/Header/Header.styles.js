@@ -12,8 +12,11 @@ export const HeaderStyles = styled.div`
    gap: 5px;
    color: ${({ theme }) => theme.colors.textHeader};
    font-size: 1.3em;
+   position: absolute;
+   top: 20px;
+
    
    .textHeaderRight {
-    font-size: 1rem;
+    font-size: 1rem;    
    }
 `;

@@ -4,30 +4,40 @@ import { NumbersContext } from "src/providers/Providers";
 
 
 
-export default function NumberButton({number}) {
+export default function NumberButton({number, i}) {
   const context = useContext(NumbersContext);
-
-const [buttonValue, setButtonValue] = useState(number);
-
-const AddNumber = () => {
-   console.log(context.numbers);
-   console.log('clicked');
-   setButtonValue('X');
+  
+  const [buttonValue, setButtonValue] = useState(number);
+  
+  
+  const AddNumber = (i) => {
+    console.log(i);
+  // console.log(e.target.value);
+  // console.log(context.numbers.length);
+  
+  if (context.numbers.length<6) {   
+  //  console.log('clicked');
    if (buttonValue==number) {
-    context.handleAddNumber(number);
-  } else {
-    context.deleteNumber(number);
+    setButtonValue('X');
+    // context.handleAddNumber(number);
+    context.setNumbers([number, ...context.numbers]);
+(context.numbers.length>=5)?context.setToggle(true):'';
+    } else {
+      context.deleteNumber(number);
+      setButtonValue(number);
+    }
+    // console.log(context.numbers);
   }
-  console.log(context.numbers);
+  else{
+    
+    return
+  }
 }
 
-// const buttonValue = ()=>{
-//   if 
-// return (number)
-// }
 
   return (
-    <NumberButtonStyles onClick={()=>AddNumber()}>
+    <NumberButtonStyles 
+    onClick={()=>AddNumber(i)}>
       {buttonValue}
     </NumberButtonStyles>
   )

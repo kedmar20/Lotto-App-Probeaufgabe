@@ -10,9 +10,10 @@ const NumberList = () => {
 console.log(numbers);
   return (
     <NumberListStyles>
-      {  numbers.map((number)=>(
-      <NumberButton key={number} number={number}/>
-        ))}
+      {  numbers.map((number, i)=>{
+      return(
+      <NumberButton key={number} number={number} i={i+1}/>
+        )})}
     </NumberListStyles>
   )
 }

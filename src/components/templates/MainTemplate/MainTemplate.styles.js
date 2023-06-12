@@ -11,6 +11,7 @@ export const MainTemplateStyles = styled.div`
     /* border: green solid 2px; */
     border-radius: 1%;
     margin: auto;
+    position: relative;
 -webkit-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.98); 
 box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.98);
 `;

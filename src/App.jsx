@@ -11,11 +11,11 @@ function App() {
 
    return (
          <ThemeProvider theme={theme}>      
-            <MainTemplate> 
-                  <NumbersProvider>
+            <NumbersProvider>
+                  <MainTemplate> 
                         <Outlet />           
-                  </NumbersProvider>
-            </MainTemplate>                   
+                  </MainTemplate>                   
+            </NumbersProvider>
          </ThemeProvider>     
          
    );
