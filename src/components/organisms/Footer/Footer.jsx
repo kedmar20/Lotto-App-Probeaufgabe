@@ -8,9 +8,11 @@ const Footer = () => {
 
    return (
       <FooterStyles>
-         <img></img>
+         <NavLink to="/">
+            <img src="src/assets/icons/trash.svg" />
+         </NavLink>
          <span>Löschen</span>
-         <NavLink to="/chosen">{context.numbers.length >= 6 ? <button>weiter</button> : ""}</NavLink>
+         <NavLink to="/chosen">{context.numbers.length >= 6 ? <button>WEITER</button> : ""}</NavLink>
       </FooterStyles>
    );
 };
