@@ -1,5 +1,6 @@
 import React, {useContext} from 'react'
 import { NumbersContext } from 'src/providers/Providers';
+import { ChosenNumbersStyles } from './ChosenNumbers.styles';
 
 
 const ChosenNumbers = () => {
@@ -7,16 +8,18 @@ const ChosenNumbers = () => {
    console.log(context.numbers);
    const SixNumbers = context.numbers;
   return (
-    <div>
-      <span>
-        ChoosenNumbers:
-        </span>
-
+    <ChosenNumbersStyles>
+      <p>
+        Ihre Zahlen (1 von 12 Feldern):
+        </p>
+<p>
+  
       {SixNumbers.map((number)=>(
       <span className='chosenNumber'>{number}</span>
       ))}
+</p>
       
-    </div>
+    </ChosenNumbersStyles>
   )
 }
 

@@ -7,7 +7,7 @@ const NumberList = () => {
     for (let step = 1; step < 50; step++) {
   numbers.push(step)
 };
-console.log(numbers);
+// console.log(numbers);
   return (
     <NumberListStyles>
       {  numbers.map((number, i)=>{

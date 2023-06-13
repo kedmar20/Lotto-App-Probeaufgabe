@@ -24,6 +24,7 @@ html {
   }
 
   .chosenNumber {
-    padding: 8px;    
+    padding: 8px;   
+    margin-top: 20px; 
    }
 

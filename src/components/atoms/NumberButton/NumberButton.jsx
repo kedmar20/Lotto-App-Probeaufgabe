@@ -12,24 +12,21 @@ export default function NumberButton({number, i}) {
   
   const AddNumber = (i) => {
     console.log(i);
-  // console.log(e.target.value);
-  // console.log(context.numbers.length);
   
   if (context.numbers.length<6) {   
-  //  console.log('clicked');
    if (buttonValue==number) {
     setButtonValue('X');
-    // context.handleAddNumber(number);
     context.setNumbers([number, ...context.numbers]);
-(context.numbers.length>=5)?context.setToggle(true):'';
+(context.numbers.length==5)?context.setToggle(true):'';
     } else {
       context.deleteNumber(number);
       setButtonValue(number);
     }
-    // console.log(context.numbers);
   }
   else{
-    
+    context.deleteNumber(number);
+    context.setToggle(false)
+    setButtonValue(number)
     return
   }
 }
