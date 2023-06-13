@@ -20,9 +20,6 @@ const NumbersProvider = ({ children }) => {
 
    const handleAddNumber = (newNumber) => {
       setNumbers([newNumber, ...numbers]);
-      // console.log(numbers);
-      // numbers.length >= 5 ? setToggle(true) : setToggle(false);
-      // numbers.length == 6 ? setToggle(true) : setToggle(false);
    };
 
    return (
