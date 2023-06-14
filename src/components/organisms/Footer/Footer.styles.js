@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterStyles = styled.div`
    display: flex;
-   flex-wrap: wrap;
+   /* flex-wrap: wrap; */
    justify-content: start;
    padding: 0 20px;
    align-items: start;
@@ -11,19 +11,25 @@ export const FooterStyles = styled.div`
    color: ${({ theme }) => theme.colors.textHeader};
    font-size: 1.3em;
    position: absolute;
-   bottom: 20px;
+   bottom: 10px;
 
    img {
-      width: 3vw;
+      width: 30px;
       color: ${({ theme }) => theme.colors.textHeader};
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+         transform: scale(0.8);
+      }
    }
 
    span {
-      width: 13vw;
+      /* width: 13vw; */
+      padding: 3px 8px 0;
    }
 
    button {
-      width: 13vw;
+      width: 100px;
       position: absolute;
       right: 5%;
       background-color: ${({ theme }) => theme.colors.cross};
@@ -35,7 +41,7 @@ export const FooterStyles = styled.div`
       cursor: pointer;
 
       &:hover {
-         transform: scale(1.1);
+         transform: scale(0.8);
       }
    }
 `;
