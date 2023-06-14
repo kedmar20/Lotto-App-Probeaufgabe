@@ -8,9 +8,7 @@ const Footer = () => {
 
    return (
       <FooterStyles>
-         <NavLink to="/">
-            <img src="src/assets/icons/trash.svg" />
-         </NavLink>
+         <img src="src/assets/icons/trash.svg" />
          <span>Löschen</span>
          <NavLink to="/chosen">{context.numbers.length >= 6 ? <button>WEITER</button> : ""}</NavLink>
       </FooterStyles>

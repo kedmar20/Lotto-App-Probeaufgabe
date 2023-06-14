@@ -4,14 +4,11 @@ export const NumbersContext = React.createContext({
    numbers: [],
    handleAddNumber: () => {},
    deleteNumber: () => {},
-   toggle: false,
-   setToggle: () => {},
    setNumbers: () => {},
 });
 
 const NumbersProvider = ({ children }) => {
    const [numbers, setNumbers] = useState([]);
-   const [toggle, setToggle] = useState(false);
 
    const deleteNumber = (clickedNumber) => {
       const filteredNumbers = numbers.filter((number) => number !== clickedNumber);
@@ -28,8 +25,6 @@ const NumbersProvider = ({ children }) => {
             numbers,
             handleAddNumber,
             deleteNumber,
-            toggle,
-            setToggle,
             setNumbers,
          }}
       >
