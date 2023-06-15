@@ -8,7 +8,7 @@ const ChosenNumbers = () => {
    const SixNumbers = context.numbers.sort((a, b) => a - b);
    return (
       <ChosenNumbersStyles>
-         <p>Ihre Zahlen (1 von 12 Feldern):</p>
+         <p className="chosenTitle">Ihre Zahlen (1 von 12 Feldern):</p>
          <p>
             {SixNumbers.map((number) => (
                <span className="chosenNumber" key={number}>
