@@ -1,12 +1,10 @@
 import styled from "styled-components";
 
 export const NumberListStyles = styled.div`
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    align-items: center;
-   width: 100%;
-   /* height: 100%; */
-   /* border: red solid 2px; */
+   align-items: center;
+   display: flex;
+   flex-wrap: wrap;
    gap: 5px;
+   justify-content: center;
+   width: 100%;
 `;

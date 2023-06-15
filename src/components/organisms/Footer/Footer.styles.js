@@ -1,22 +1,21 @@
 import styled from "styled-components";
 
 export const FooterStyles = styled.div`
+   align-items: start;
+   bottom: 10px;
+   color: ${({ theme }) => theme.colors.textHeader};
    display: flex;
-   /* flex-wrap: wrap; */
+   font-size: 1.3em;
+   gap: 5px;
    justify-content: start;
    padding: 0 20px;
-   align-items: start;
-   width: 100%;
-   gap: 5px;
-   color: ${({ theme }) => theme.colors.textHeader};
-   font-size: 1.3em;
    position: absolute;
-   bottom: 10px;
+   width: 100%;
 
    img {
-      width: 30px;
       color: ${({ theme }) => theme.colors.textHeader};
       transition: all 0.3s ease-in-out;
+      width: 30px;
 
       &:hover {
          transform: scale(0.8);
@@ -24,21 +23,20 @@ export const FooterStyles = styled.div`
    }
 
    span {
-      /* width: 13vw; */
       padding: 3px 8px 0;
    }
 
    button {
-      width: 100px;
+      background-color: ${({ theme }) => theme.colors.cross};
+      border: none;
+      border-radius: 25px;
+      color: ${({ theme }) => theme.colors.white};
+      cursor: pointer;
+      padding: 6px 0;
       position: absolute;
       right: 5%;
-      background-color: ${({ theme }) => theme.colors.cross};
-      color: ${({ theme }) => theme.colors.white};
-      border-radius: 25px;
-      border: none;
-      padding: 6px 0;
       transition: all 0.3s ease-in-out;
-      cursor: pointer;
+      width: 100px;
 
       &:hover {
          transform: scale(0.8);
