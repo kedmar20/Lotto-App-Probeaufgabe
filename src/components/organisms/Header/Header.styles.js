@@ -1,22 +1,19 @@
 import styled from "styled-components";
 
 export const HeaderStyles = styled.div`
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    padding: 0 20px;
-    align-items: start;
-   width: 100%;
-   /* height: 100%; */
-   /* border: red solid 2px; */
-   gap: 5px;
+   align-items: start;
    color: ${({ theme }) => theme.colors.textHeader};
+   display: flex;
+   flex-wrap: wrap;
    font-size: 1.3em;
+   gap: 5px;
+   justify-content: space-between;
+   padding: 0 20px;
    position: absolute;
    top: 20px;
+   width: 100%;
 
-   
    .textHeaderRight {
-    font-size: 1rem;    
+      font-size: 1rem;
    }
 `;

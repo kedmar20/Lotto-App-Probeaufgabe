@@ -4,7 +4,6 @@ import { ChosenNumbersStyles } from "./ChosenNumbers.styles";
 
 const ChosenNumbers = () => {
    const context = useContext(NumbersContext);
-   console.log(context.numbers);
    const SixNumbers = context.numbers.sort((a, b) => a - b);
    return (
       <ChosenNumbersStyles>

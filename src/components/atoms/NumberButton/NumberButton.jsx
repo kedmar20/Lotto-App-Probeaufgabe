@@ -9,7 +9,6 @@ export default function NumberButton({ number, i }) {
    const cross = () => <img src="src/assets/icons/cross.svg" />;
 
    const AddNumber = (i) => {
-      console.log(context.numbers.length);
 
       if (context.numbers.length < 6) {
          if (buttonValue == number) {
